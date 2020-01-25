@@ -11,7 +11,7 @@ public class MyColorScript : MonoBehaviour
         Debug.Log("We made it here");
     }
 
-    private void OnClickChangeColor() {
+    public void OnClickChangeColor() {
         myRenderer = plane.GetComponent<MeshRenderer>();
         myRenderer.enabled = !myRenderer.enabled;
     }
